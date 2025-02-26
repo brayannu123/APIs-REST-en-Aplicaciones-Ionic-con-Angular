@@ -4,7 +4,7 @@ Para instalar y ejecutar BobsBurgersAPI, sigue estos pasos:
 
 1.Clonar el repositorio
 ```bash
-  npm install
+ (https://github.com/brayannu123/APIs-REST-en-Aplicaciones-Ionic-con-Angular.git)
 ```
 2. Instalar dependencias
 - Desde una terminal en la carpeta del proyecto, ejecuta:
