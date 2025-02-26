@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de Personajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    @for (character of characters; track character.id) {
+    <app-card-character [character]="character"></app-card-character>
+    }
+  </ion-list>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ character?.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [ngStyle]="{'background-image': 'url(' + character?.image + ')'}">
+  <div class="background-overlay"></div>
+  <div class="detail-container">
+    <ion-card class="custom-card">
+      <div class="image-container">
+        <ion-img [src]="character?.image" [alt]="character?.name"></ion-img>
+      </div>
+      <ion-card-header>
+        <ion-card-title>{{ character?.name }}</ion-card-title>
+        <ion-card-subtitle>{{ character?.occupation }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Género:</strong> {{ character?.gender }}</p>
+        <p><strong>Color de cabello:</strong> {{ character?.hair }}</p>
+        <p><strong>Primera aparición:</strong> {{ character?.firstEpisode }}</p>
+        <p><strong>Voz por:</strong> {{ character?.voicedBy }}</p>
+        <p><strong>Wiki:</strong> <a [href]="character?.wikiUrl" target="_blank">Ver más</a></p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

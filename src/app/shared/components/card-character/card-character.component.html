@@ -1,0 +1,10 @@
+<ion-item [button]="true" (click)="next()" class="custom-card">
+  <ion-thumbnail slot="start">
+    <img [src]="character.image" [alt]="character.name" />
+  </ion-thumbnail>
+  <ion-label>
+    <h2>{{ character.name }}</h2>
+    <p>Ocupación: {{ character.occupation }}</p>
+    <p>Primera aparición: {{ character.firstEpisode }}</p>
+  </ion-label>
+</ion-item>
